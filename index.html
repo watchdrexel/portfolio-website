@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea R. Stephens | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Poppins for body, Barlow Condensed for headers -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Barlow+Condensed:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Left: Name & Secret Switcher -->
+            <div class="logo-area">
+                <a href="#" class="logo-name nav-trigger" data-target="home">Andrea R. Stephens</a>
+                
+                <!-- Stealth Dropdown Trigger -->
+                <div class="secret-role-container">
+                    <span id="role-subtitle" class="logo-subtitle">Creative Operations Lead</span>
+                    <div class="secret-menu">
+                        <div data-role="technical" class="secret-item active">Technical</div>
+                        <div data-role="creative" class="secret-item">Creative</div>
+                        <div data-role="data" class="secret-item">Data</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: About Link -->
+            <div class="nav-actions">
+                <!-- Dynamic Link: Text changes via JS -->
+                <a href="#about" class="nav-text-link nav-trigger" data-target="about">About</a>
+                <button class="mobile-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close Menu"><i class="fa-solid fa-xmark"></i></button>
+        <a href="#" class="nav-trigger" data-target="home">Latest Project</a>
+        <a href="#about" class="nav-trigger" data-target="about">About</a>
+        
+        <div class="mobile-socials">
+            <a href="https://www.linkedin.com/in/andrea-r-stephens/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:drerstephens@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.imdb.com/name/nm4236333/" target="_blank"><i class="fa-solid fa-clapperboard"></i></a>
+        </div>
+    </div>
+
+    <main id="main-content">
+        
+        <!-- VIEW 1: Project Carousel (Home Top) -->
+        <div id="project-view" class="view-section active">
+            <div class="showcase-container">
+                
+                <!-- Left: Info -->
+                <div class="showcase-info">
+                    <h1 class="showcase-title">Budgetline<br>Production Planning</h1>
+                    
+                    <p class="showcase-description">
+                        A budgeting application for line producers that enables budgeting based on estimated costs and schedules. It acts as a communication tool for managers and supervisors.
+                    </p>
+
+                    <div class="showcase-tools">
+                        <span>Google AI Studio</span>
+                        <span>ChatGPT</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                    </div>
+
+                    <!-- Link to Trigger Modal -->
+                    <a href="#" class="open-case-study open-case-study-btn">
+                        OPEN CASE STUDY <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+
+                <!-- Right: Image -->
+                <div class="showcase-visual">
+                    <div class="skew-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=900&q=80" alt="Production Dashboard" class="project-image">
+                        <div class="play-icon-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="skew-shadow"></div>
+                    </div>
+                </div>
+
+                <!-- Far Right: Carousel Dots + Arrows -->
+                <div class="carousel-nav">
+                    <button class="prev-project-btn" aria-label="Previous Project">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </button>
+                    <div class="dots-wrapper">
+                        <div class="dot active"></div>
+                    </div>
+                    <button class="next-project-btn" aria-label="Next Project">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW 2: About Bio (About Top) -->
+        <div id="about-view" class="view-section hidden">
+            <!-- Hero Section -->
+            <section id="about-hero" class="hero">
+                <div class="container hero-grid">
+                    
+                    <!-- Left: Intro Text -->
+                    <div class="hero-text fade-in">
+                        <span class="greeting">About Me</span>
+                        <h1 class="hero-name" id="about-headline">People | Process | Tools</h1>
+                        <div class="accent-line"></div>
+                        <p class="hero-bio" id="about-bio">
+                            I’m a Creative Operations Lead with 15+ years of experience in film and television spanning across Animation, VFX, Digital Marketing, and Broadcast. I design workflows, production systems, and internal tools that reduce friction, improve visibility, and help creative teams operate effectively at scale.
+                        </p>
+                        
+                        <div class="hero-socials">
+                            <a href="https://www.linkedin.com/in/andrea-r-stephens/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.imdb.com/name/nm4236333/" target="_blank" aria-label="IMDb"><i class="fa-solid fa-clapperboard"></i></a>
+                        </div>
+                        
+                        <div class="hero-btns">
+                            <a href="#contact" class="btn primary">Let's Chat <i class="fa-solid fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Portrait -->
+                    <div class="hero-image-area fade-in">
+                        <img 
+                            src="https://drive.google.com/thumbnail?id=1YDmvxYU78N8sAXQQZPPY7i0kvtw7PIaW&sz=w1000" 
+                            alt="Andrea Stephens" 
+                            class="portrait"
+                            onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 400 600\'%3E%3Cdefs%3E%3ClinearGradient id=\'grad1\' x1=\'0%25\' y1=\'0%25\' x2=\'100%25\' y2=\'0%25\'%3E%3Cstop offset=\'0%25\' style=\'stop-color:%23333;stop-opacity:1\' /%3E%3Cstop offset=\'100%25\' style=\'stop-color:%23555;stop-opacity:1\' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill=\'url(%23grad1)\' d=\'M200,100 C150,100 130,150 130,200 C130,260 160,280 180,290 L120,600 L280,600 L220,290 C240,280 270,260 270,200 C270,150 250,100 200,100 Z\' /%3E%3Ccircle cx=\'200\' cy=\'180\' r=\'50\' fill=\'%23666\' /%3E%3C/svg%3E'"
+                        >
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- GLOBAL SECTIONS (Visible on both views) -->
+
+        <!-- Filmography / Movies Section -->
+        <section id="filmography" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Filmography</span>
+                    <h2 class="title">Credited Projects</h2>
+                </div>
+                
+                <div class="movies-grid" id="movies-grid-container">
+                    <!-- Movies injected via JS -->
+                </div>
+
+                <!-- NEW BUTTON: Link to full IMDb -->
+                <div class="view-all-wrapper">
+                    <a href="https://www.imdb.com/name/nm4236333/" target="_blank" class="view-all-btn">
+                        View Full Filmography on IMDb <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container contact-container">
+                <div class="contact-text">
+                    <span class="sub-title">Contact</span>
+                    <h2 class="title">Get In Touch</h2>
+                    <p>Have a project in mind? Let's build something great.</p>
+                </div>
+                
+                <!-- MOVED OUTSIDE of contact-text to allow full width -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <a href="mailto:drerstephens@gmail.com" class="contact-link-wrapper">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span id="contact-email-text">drerstephens@gmail.com</span>
+                        </a>
+                        <button id="copy-email-btn" class="copy-btn" aria-label="Copy Email">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+                    <div class="info-item">
+                        <a href="https://www.linkedin.com/in/andrea-r-stephens/" target="_blank" class="contact-link-wrapper">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span id="contact-linkedin-text">linkedin.com/in/andrea-r-stephens</span>
+                        </a>
+                        <button id="copy-linkedin-btn" class="copy-btn" aria-label="Copy LinkedIn">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Footer -->
+        <footer>
+            <div class="container">
+                <p>© 2026 Andrea R. Stephens. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Global Video Lightbox -->
+    <div id="video-lightbox" class="video-lightbox-overlay">
+        <button class="close-lightbox-btn" aria-label="Close Video"><i class="fa-solid fa-xmark"></i></button>
+        <div class="lightbox-video-container">
+            <video id="lightbox-player" controls playsinline>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Case Study Modal -->
+    <div id="case-study-modal" class="modal-overlay">
+        <button class="close-modal-btn" aria-label="Close Case Study"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-content">
+            <iframe id="case-study-frame" src="" title="Case Study" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
